@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML & JavaScript Calculator</title>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <label>First Number: <input id="first" type="number"></label><br><br>
+    <label>Second Number: <input id="second" type="number"></label><br><br>
+    <label>
+        Symbol: 
+        <input id="math-symbol" type="text">
+        <div class="tooltip"><strong>Symbols</strong>
+            <span class="tooltipText">
+                + &rarr; addition<br>
+                - &rarr; subtraction<br>
+                * &rarr; multiplication<br>
+                / &rarr; division
+            </span>
+        </div>
+    </label><br><br>
+    <label>Result: <input id="result" type="number"></label><br><br>
+    <button id="startCalculation" onclick="performCalculation(document.getElementById('math-symbol'), document.getElementById('first'), document.getElementById('second'))">Perform Calculation</button>
+    <button id="reset" onclick="reset()">Reset</button>
+</body>
+<script src="./script.js"></script>
+</html>
